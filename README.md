@@ -7,6 +7,14 @@ Below is a preview of what the app will look like once set up for a logged in us
   <img height="450" width="auto" alt="Preview Image" src="Images/XamarinFirebaseMessagingPreview.png" />
 </p>
 
+## Dependencies
+This app uses the following libraries:
+1. **FirebaseDatabase.net** - .NET client for communicating with a Google Firebase Realtime Database
+2. **FirebaseAuthentication.net** - .NET client for authenticating with Google Firebase
+3. **Microsoft.AppCenter** - Used to register app with Microsoft app center for analytics and crash reporting
+4. **Xamarin.Auth** - Used to store client credentials so users don't have to login every time they launch the app
+5. **Unity** - Used for dependency injection
+
 # Setup
 
 ## Firebase Setup
