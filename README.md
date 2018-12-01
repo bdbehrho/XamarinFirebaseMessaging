@@ -1,5 +1,5 @@
 # XamarinFirebaseMessaging
-Demo app that uses Xamarin.Forms and Google Firebase for a realtime messaging app
+Demo app that uses Xamarin.Forms and Google Firebase for realtime messaging between devices. This project was created to be an example for how to do peer to peer communication between devices using Google Firebase. If you have suggestions or run across any bugs, please feel free to post issues and/or make a pull request!
 
 ## Preview
 Below is a preview of what the app will look like once set up for a logged in user
