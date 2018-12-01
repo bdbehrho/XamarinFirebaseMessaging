@@ -43,7 +43,7 @@ This app uses the following libraries:
 
 **NOTE:**
 
-It is recommend you run the following in your repository to avoid accidentally committing your Constants.cs with sensitive app keys:
+It is recommended that you run the following in your repository to avoid accidentally committing your Constants.cs with sensitive app keys:
 ```git update-index --assume-unchanged XamarinFirebaseMessaging\XamarinFirebaseMessaging\Constants.cs```
 
 ### Firebase Authentication Setup
