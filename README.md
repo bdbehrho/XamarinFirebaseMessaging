@@ -1,6 +1,10 @@
 # XamarinFirebaseMessaging
 Demo app that uses Xamarin.Forms and Google Firebase for a realtime messaging app
 
+## Preview
+Below is a preview of what the app will look like once set up for a logged in user
+![Preview Image](Images/XamarinFirebaseMessagingPreview.png)
+
 # Setup
 
 ## Firebase Setup
