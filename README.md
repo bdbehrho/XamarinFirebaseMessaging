@@ -56,9 +56,9 @@ It is recommended that you run the following in your repository to avoid acciden
 2. Create a new App targeting Android and Xamarin (You will need to make a separate app in appcenter for IOS and UWP if you desire)
 3. Copy app key into Constants.ANDROID_APP_CENTER_KEY (app key can be found on Overview -> Getting Started after creating app)
 
-## Troubleshooting
+# Troubleshooting
 
-### The specified path, file name, or both are too long
+## The specified path, file name, or both are too long
 On Windows 10 I've run into issues with the android build error saying the path is too long. To fix this,
 1. Run regedit.exe
 2. Set HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem\LongPathsEnabled to 1 (you may or may not need to reboot)
