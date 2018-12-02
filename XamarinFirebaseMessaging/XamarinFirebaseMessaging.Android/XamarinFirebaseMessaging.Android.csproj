@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
     <NuGetPackageImportStamp>
@@ -105,7 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XamarinFirebaseMessaging\XamarinFirebaseMessaging.csproj">
-      <Project>{C13253B7-860C-4024-A1B5-337F9FFE2DD3}</Project>
+      <Project>{11921147-736E-4EC5-9F0C-7B64A568F264}</Project>
       <Name>XamarinFirebaseMessaging</Name>
     </ProjectReference>
   </ItemGroup>

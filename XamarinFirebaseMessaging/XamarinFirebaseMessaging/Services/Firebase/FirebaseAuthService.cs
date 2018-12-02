@@ -51,7 +51,14 @@ namespace XamarinFirebaseMessaging.Services.Firebase
 
         private void SaveAuthToAccount()
         {
-            _accountStoreService.SetValue(FIREBASE_AUTH_ACCOUNT_PROPERTIES_KEY, _auth);
+            try
+            {
+                _accountStoreService.SetValue(FIREBASE_AUTH_ACCOUNT_PROPERTIES_KEY, _auth);
+            }
+            catch (Exception ex)
+            {
+                // This fails on iOS currently, just ignore and users will have to log in every time
+            }
         }
 
         public async Task<FirebaseAuth> SignInWithEmailAndPassword(string email, string password)

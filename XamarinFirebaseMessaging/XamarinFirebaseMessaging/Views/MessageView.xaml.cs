@@ -36,7 +36,10 @@ namespace XamarinFirebaseMessaging.Views
 
         private void ScrollToBottom(object sender, EventArgs e)
         {
-            MessageList.ScrollTo(_messageVm.Messages.LastOrDefault(), ScrollToPosition.End, true);
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                MessageList.ScrollTo(_messageVm.Messages.LastOrDefault(), ScrollToPosition.End, true);
+            });
         }
 
         public async void SendMessage(object sender, EventArgs e)
@@ -44,8 +47,12 @@ namespace XamarinFirebaseMessaging.Views
             try
             {
                 await _messageVm.SendMessage(MessageText.Text);
-                MessageText.Text = "";
-            } catch(Exception ex) { PageUtil.DisplayExceptionAlert(this, ex, "Error sending message"); }
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    MessageText.Text = "";
+                });
+            }
+            catch (Exception ex) { PageUtil.DisplayExceptionAlert(this, ex, "Error sending message"); }
         }
     }
 }

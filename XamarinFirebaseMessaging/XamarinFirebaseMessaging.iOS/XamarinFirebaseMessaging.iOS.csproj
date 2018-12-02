@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -148,12 +148,15 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="System.Reflection.Emit" Version="4.3.0">
+	<ExcludeAssets>all</ExcludeAssets>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.1.0.697729" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\XamarinFirebaseMessaging\XamarinFirebaseMessaging.csproj">
-      <Project>{C13253B7-860C-4024-A1B5-337F9FFE2DD3}</Project>
+      <Project>{11921147-736E-4EC5-9F0C-7B64A568F264}</Project>
       <Name>XamarinFirebaseMessaging</Name>
     </ProjectReference>
   </ItemGroup>
