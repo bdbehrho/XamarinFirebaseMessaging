@@ -30,7 +30,7 @@ namespace XamarinFirebaseMessaging
 
         private void StartAppStore()
         {
-            AppCenter.Start($"android={Constants.ANDROID_APP_CENTER_KEY};",
+            AppCenter.Start($"android={Constants.ANDROID_APP_CENTER_KEY};ios={Constants.IOS_APP_CENTER_KEY}",
                   typeof(Analytics), typeof(Crashes));
         }
 
