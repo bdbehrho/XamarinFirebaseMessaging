@@ -60,5 +60,10 @@ It is recommended that you run the following in your repository to avoid acciden
 
 ## The specified path, file name, or both are too long
 On Windows 10 I've run into issues with the android build error saying the path is too long. To fix this,
+
+### Best Solution
+Move source code into C:\dev folder and it should work there
+
+### Enable Long File Paths in Windows
 1. Run regedit.exe
 2. Set HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem\LongPathsEnabled to 1 (you may or may not need to reboot)
