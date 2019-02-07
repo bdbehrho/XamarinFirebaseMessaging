@@ -36,15 +36,19 @@ namespace XamarinFirebaseMessaging.ViewModels
 
         private void HandleNewMessage(FirebaseObject<Message> message)
         {
-            if (_messageDictionary.ContainsKey(message.Key))
+            // if Object is null, that is the Firebase.Database way of telling us the collection is empty, so ignore here
+            if (message.Object != null)
             {
-                _messageDictionary[message.Key].Text = message.Object.Text;
-            }
-            else
-            {
-                _messageDictionary[message.Key] = message.Object;
-                _messages.Add(message.Object);
-                MessageAdded?.Invoke(this, null);
+                if (_messageDictionary.ContainsKey(message.Key))
+                {
+                    _messageDictionary[message.Key].Text = message.Object.Text;
+                }
+                else
+                {
+                    _messageDictionary[message.Key] = message.Object;
+                    _messages.Add(message.Object);
+                    MessageAdded?.Invoke(this, null);
+                }
             }
         }
 
