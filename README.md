@@ -22,8 +22,7 @@ This app uses the following libraries:
 ### Realtime Database Setup
 1. Create a new Firebase project on Google Firebase if you haven't already.
 2. Create a realtime database.
-3. Create an empty "messages" collection in your realtime database.
-4. Add rules to your database under "Rules" tab and click publish
+3. Add rules to your database under "Rules" tab and click publish
 
 **Example Rules:**
 ```
